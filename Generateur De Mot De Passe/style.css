@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    background-color: white;
+    border-radius: 30px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #ffffff,#bbdff7);
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 350px;
+}
+h2{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 16px;
+    font-weight: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.passwordBox{
+    padding: 0 10px;
+}
+input{
+    width: 100%;
+    letter-spacing: 3px;
+    padding: 20px;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.buttons{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button{
+    text-transform: capitalize;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+button:first-child{
+    color: #000000;
+    background-color: transparent;
+    width: 69%;
+    background-color: #9D770A;
+    font-weight: bolder;
+}
+button:last-child{
+        color: #6c757d;
+        background-color: skyblue;
+        width: 28%;
+        border: 1px solid #ccc;
+}

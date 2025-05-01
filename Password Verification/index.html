@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons8-password-50.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Password Verification</title>
+</head>
+<body>
+    <section>
+        <div class="image">
+            <figure>
+                <img src="20945227.jpg" alt="">
+            </figure>
+            <figcaption>
+                <h2>Web Development</h2>
+                <p>Made easy!</p>
+            </figcaption>
+        </div>
+        <form>
+            <div class="input-group">
+                <input type="text" required="required" title="username">
+                <label>
+                    <div class="icon"><i class="fa-solid fa-user"></i> Username</div>
+                </label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="psw" required = "required" title="password">
+                <label><i class="fa-solid fa-lock"></i> Password</label>
+                <div class="eye">
+                    <i id="eyeopen" class="fa-solid fa-eye"></i>
+                    <i id="eyeclose" class="fa-solid fa-eye-slash"></i>
+                </div>
+            </div>
+            <button>Login</button>
+            <p>Forgot password? or Sign up</p>
+        </form>
+    </section>
+    <div id="message">
+        <h3>Your Password Must Have </h3>
+        <p id="letter" class="invalid">Lowercase letter</p>
+        <p id="capital" class="invalid">Uppercase letter</p>
+        <p id="number" class="invalid">A number</p>
+        <p id="length" class="invalid">Minimum 8 characters</p>
+        <p id="characters" class="invalid">Atleast a special character</p>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+/* font-family: "Phudu", serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #ffffff,#bbdff7);
+}
+body h1{
+    font-size: 40px;
+}
+section{
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: inset -10px -10px 1px black;
+    box-shadow:-5px -5px 5px rgb(255, 255, 255), 5px 5px 5px rgb(165, 165, 165);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+section .image{
+    margin-bottom: 30px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section .image figure{
+    border: 2px solid #ccc;
+    height: 150px;
+    width: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+section .image figure img{
+    width: 100%;
+    height: 100%;
+}
+section .image figcaption{
+    margin-top: 30px;
+    font-family: "Phudu", serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+}
+section .image figcaption p{
+    color: #929292;
+}
+/* box-shadow: inset -5px -5px 5px red, 5px 5px 5px blue;  */
+
+form{
+   width: 100%;
+   line-height: 30px;
+}
+form .input-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    position: relative;
+}
+form .input-group .eye{
+    position: absolute;
+    top: 20%;
+    left: 90%;
+}
+form .input-group .eye i{ 
+    position: absolute;
+    cursor: pointer;
+}
+form .input-group .eye #eyeopen{
+    opacity: 1;
+}
+form .input-group .eye #eyeclose{
+    opacity: 0;
+}
+form .input-group input{
+    height: 45px;
+    width: 100%;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 10px;
+    background: linear-gradient(to right, #ffffff,#bbdff7);
+    box-shadow: inset -5px -5px 5px rgb(255, 255, 255),
+    inset 5px 5px 5px rgb(117, 117, 117);
+    margin-bottom: 30px;
+    pointer-events: all;
+}
+form .input-group input:valid,
+form .input-group input:focus{
+    border: none;
+    outline: none;
+}
+form .input-group input:valid + label,
+form .input-group input:focus + label{
+    top: -35%;
+}
+form .input-group label{
+    color: #8d8d8d;
+    font-size: 14px;
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    pointer-events: none;
+    transition: 1s ease-in;
+}
+form button{
+    width: 100%;
+    height: 40px;
+    background-color:#0179D6;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+form p{
+    color: #858585;
+    text-decoration: underline;
+}
+
+#message {
+    font-family: sans-serif;
+    line-height: 30px;
+    display: none;
+    flex-direction: column;
+    border-radius: 6px;
+    width: 350px;
+    color: black;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+    animation: anime 1s ease-out;
+    margin-right: 50px;
+}
+@keyframes anime{
+    from{
+        transform:  translateY(100px);
+    }
+}
+
+.invalid{
+    color: red;
+}
+.invalid::before{
+    position: relative;
+    left: -7px;
+    content: "✖";
+}
+
+.valid{
+    color: green;
+}
+.valid::before{
+    position: relative;
+    left: -7px;
+    content: "✓";
+}
